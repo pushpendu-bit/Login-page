@@ -9,34 +9,41 @@
 </head>
 <body>
     <form action="./submit.php">
+
+        <!-- Name input -->
         <div>
             <label for="name">Name</label>
-            <input type="name" type="text" placeholder="Enter your name" required>
+            <input id="name" name="name" type="text" placeholder="Enter your name" required>
         </div>
 
+        <!-- phone input -->
         <div>
             <label for="phone">Phone</label>
-            <input id="phone" type="tel" placeholder="Enter your number" required>
+            <input id="phone" name="phone" type="tel" placeholder="Enter your number" required>
         </div>
 
+        <!-- email input -->
         <div>
             <label for="email">Email</label>
-            <input id="email" type="email" placeholder="Enter your Email" required>
+            <input id="email" name="email" type="email" placeholder="Enter your Email" required>
         </div>
 
+        <!-- password -->
         <div>
             <label for="password">password</label>
-            <input id="password" type="password" placeholder="Enter your password" required>
+            <input id="password" name="password" type="password" placeholder="Enter your password" required>
         </div>
 
+        <!-- date-of-birth -->
         <div>
             <label for="dob">Date-of-birth</label>
-            <input id="dob" type="date" placeholder="Enter your date-of-birth" required>
+            <input id="dob" name="dob" type="date" placeholder="Enter your date-of-birth" required>
         </div>
 
+        <!-- Gender -->
         <div>
             <label for="Gender">Gender</label>
-            <select id="Gender" required>
+            <select id="Gender" name="gender" required>
                 <option value="" disabled selected>Select Gender</option>
                 <option value="male">Male</option>
                 <option value="female">Female</option>
@@ -44,9 +51,10 @@
             </select>
         </div>
 
+        <!-- subscription-plan -->
         <div>
             <p>Subscription Plan</p>
-            <input type="radio" id="basic" name="subscription" value="basic">
+            <input type="radio" id="basic" name="subscription" value="basic" required>
             <label for="basic">Basic</label>
 
             <input type="radio" id="premium" name="subscription" value="premium">
@@ -57,18 +65,21 @@
 
         </div>
 
+        <!-- terms and condition -->
         <div>
-            <input type="checkbox" id="terms" required>
+            <input type="checkbox" id="terms" name="terms" required>
             <label for="terms">I agree with the terms and condition</label> 
         </div>
 
+        <!-- Comments -->
         <div>
             <label for="comments">Comments</label>
-            <textarea placeholder="Enter your comments" id="comments" rows="5"></textarea>
+            <textarea placeholder="Enter your comments" name="comments" id="comments" rows="5"></textarea>
         </div>
 
+        <!-- submit -->
         <div>
-            <button>Submit</button>
+            <button type="submit">Submit</button>
         </div>
         
     </form>
